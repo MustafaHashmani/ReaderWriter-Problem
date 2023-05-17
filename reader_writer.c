@@ -51,7 +51,7 @@ int main()
     pthread_create(&write[i], NULL, (void *)writer, (void *)&a[i]);
   }
 
-  // Join the reader and writer threads
+  // Join the reader and writer threads.
   for (int i = 0; i < 10; i++) {
     pthread_join(read[i], NULL);
   }
