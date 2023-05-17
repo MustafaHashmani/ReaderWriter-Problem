@@ -13,7 +13,7 @@ static struct semaphore wrt;    // Controls access to the critical section for w
 static int reader_count = 0;    // Number of readers currently accessing the critical section
 static int *data_buffer = NULL; // Data buffer for the writer to write and the reader to read
 
-asmlinkage long sys_<syscall_name>(void)
+asmlinkage long sys_hello(void)
 {
     if (data_buffer == NULL) {
         // Allocate memory for the data buffer
