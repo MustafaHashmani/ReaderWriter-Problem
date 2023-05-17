@@ -18,7 +18,12 @@ The objectives of the reader-writer problem can be summarized as follows:
 2. Write Exclusively: Ensure exclusive access to the shared resource when a writer wants to modify or update it. This means that only one writer can access the resource at a time to prevent data corruption or race conditions.
 
 3. No Reader-Writer Starvation: Avoid situations where either readers or writers are indefinitely delayed or starved from accessing the resource. Balancing the access of readers and writers is essential to maintain fairness and prevent situations where one group is constantly favored over the other.
+## References
 
+1. Gate Smasher's YouTube Video https://www.youtube.com/watch?v=Zdzp5k3eSYg&pp=ygUWcmVhZGVyIHdyaXRlciBwcm9ibGVtIA%3D%3D
+2. Knowledge Gate Youtube Video https://www.youtube.com/watch?v=kn2Okc2cAaQ&pp=ygUWcmVhZGVyIHdyaXRlciBwcm9ibGVtIA%3D%3D
+3. Love Babbaer's Youtube Video https://www.youtube.com/watch?v=TyJ3as7haIU&pp=ygUWcmVhZGVyIHdyaXRlciBwcm9ibGVtIA%3D%3D
+4. Chatgpt was used for Debugging
 ## Requirements
 To compile and run this program, you need to have the following:
 
