@@ -27,7 +27,53 @@ void *writer(void *wno)
 }
 
 
+  // Acquire the mutex
+  pthread_mutex_lock(&mutex);
 
+  // Decrement the number of readers
+  numreader--;
+
+  // If this is the last reader, then wake up the writer
+  if (numreader == 0) {
+    sem_post(&wrt);
+  }
+
+  // Release the mutex
+  pthread_mutex_unlock(&mutex);
+}
+void *reader(void *rno)
+{
+  // Acquire the mutex
+  pthread_mutex_lock(&mutex);
+
+  // Increment the number of readers
+  numreader++;
+
+  // If this is the first reader, then block the writer
+  if (numreader == 1) {
+    sem_wait(&wrt);
+  }
+
+  // Release the mutex
+  pthread_mutex_unlock(&mutex);
+
+  // Read the shared variable
+  printf("Reader %d: read cnt as %d\n", *((int *)rno), cnt);
+
+  // Acquire the mutex
+  pthread_mutex_lock(&mutex);
+  
+  // Decrement the number of readers
+  numreader--;
+
+  // If this is the last reader, then wake up the writer
+  if (numreader == 0) {
+    sem_post(&wrt);
+  }
+
+  // Release the mutex
+  pthread_mutex_unlock(&mutex);
+}
 // Main function
 int main()
 {
