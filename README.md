@@ -22,7 +22,7 @@ The objectives of the reader-writer problem can be summarized as follows:
 
 1. Gate Smasher's YouTube Video https://www.youtube.com/watch?v=Zdzp5k3eSYg&pp=ygUWcmVhZGVyIHdyaXRlciBwcm9ibGVtIA%3D%3D
 2. Knowledge Gate Youtube Video https://www.youtube.com/watch?v=kn2Okc2cAaQ&pp=ygUWcmVhZGVyIHdyaXRlciBwcm9ibGVtIA%3D%3D
-3. Love Babbaer's Youtube Video https://www.youtube.com/watch?v=TyJ3as7haIU&pp=ygUWcmVhZGVyIHdyaXRlciBwcm9ibGVtIA%3D%3D
+3. Love Babbar's Youtube Video https://www.youtube.com/watch?v=TyJ3as7haIU&pp=ygUWcmVhZGVyIHdyaXRlciBwcm9ibGVtIA%3D%3D
 4. Chatgpt was used for Debugging
 ## Requirements
 To compile and run this program, you need to have the following:
