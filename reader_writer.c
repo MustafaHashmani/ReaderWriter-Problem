@@ -26,25 +26,6 @@ void *writer(void *wno)
   sem_post(&wrt);
 }
 
-// Reader function
-void *reader(void *rno)
-{
-  // Acquire the mutex
-  pthread_mutex_lock(&mutex);
-
-  // Increment the number of readers
-  numreader++;
-
-  // If this is the first reader, then block the writer
-  if (numreader == 1) {
-    sem_wait(&wrt);
-  }
-
-  // Release the mutex
-  pthread_mutex_unlock(&mutex);
-
-  // Read the shared variable
-  printf("Reader %d: read cnt as %d\n", *((int *)rno), cnt);
 
   // Acquire the mutex
   pthread_mutex_lock(&mutex);
@@ -81,7 +62,7 @@ void *reader(void *rno)
 
   // Acquire the mutex
   pthread_mutex_lock(&mutex);
-
+  
   // Decrement the number of readers
   numreader--;
 
