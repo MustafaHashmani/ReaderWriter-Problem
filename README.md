@@ -36,8 +36,8 @@ After compilation, execute the program using the following command:
 `./reader_writer`
 
 ## Output
+![image](https://github.com/MustafaHashmani/ReaderWriter-Problem/assets/63756923/aaf6e243-16ef-4404-acdd-cb5702c0cb78)
 
-![Picture1](https://github.com/MuneerRaza/Chainsmoker-problem/assets/107882873/d0b69cc1-5dff-4da9-afe6-5fb1eec20ffe)
 
 ## Students
 * Mustafa Hashmani (21k-3080)
